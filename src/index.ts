@@ -52,7 +52,7 @@ export class DbBuryingPoint {
     let dt = data;
     if (
       _.isBoolean(this.config) &&
-      !_.isEmpty(_.get(this.config, "data.buryingPointType"))
+      !_.isEmpty(_.get(this.config, data.buryingPointType))
     ) {
       const config: any = this.config[data.buryingPointType];
       const shouldReported: boolean = _.get(config, "shouldReport", true);
