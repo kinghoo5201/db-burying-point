@@ -108,7 +108,6 @@ export default function(
       pageUrl: window.location.href,
       uploadFlag: false
     });
-    // }
   });
   window.addEventListener(ajaxEventType.ajaxLoadEnd, function() {
     timeRecordArray.forEach(timeRecord => {
@@ -119,7 +118,6 @@ export default function(
       if (timeRecord.event.detail.status > 0) {
         timeRecord.uploadFlag = true;
         const requestUrl = timeRecord.event.detail.responseURL;
-        console.log("requestUrl", requestUrl);
         if (isUrlValid(requestUrl, config)) {
           handleHttpResult(timeRecord);
         }

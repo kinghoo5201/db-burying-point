@@ -2,7 +2,7 @@ import * as _ from "lodash";
 import pageAccess from "./modules/pageAccess";
 import interfaceRequest from "./modules/interfaceRequest";
 import userOperation from "./modules/userOperation";
-import { DEVICE_INFO, restFulParam } from "./util";
+import { restFulParam } from "./util";
 import { def } from "./types";
 
 export class DbBuryingPoint {
