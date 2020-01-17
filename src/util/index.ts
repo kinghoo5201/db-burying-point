@@ -120,7 +120,7 @@ export function restFulParam(param: any, sep: string = '&'): string {
   if (_.isObject(param) && !_.isEmpty(param)) {
     const parArr: string[] = [];
     Object.keys(param).forEach(key => {
-      parArr.push(`${key}=${param[key].toString()}`);
+      parArr.push(`${key}=${(_.get(param,key,'')||'').toString()}`);
     });
     return parArr.join(sep);
   }
