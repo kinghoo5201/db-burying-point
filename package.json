@@ -1,6 +1,6 @@
 {
   "name": "dz-burying",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "监控前端错误及请求",
   "main": "./dist/index.js",
   "scripts": {
