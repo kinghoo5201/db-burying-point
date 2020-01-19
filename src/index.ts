@@ -49,6 +49,7 @@ export class DbBuryingPoint {
 
   /** 接收器 */
   public recordReceiver = (data: def.commonInfo.ICommonConfig) => {
+    window.console.log(data,this.config, _.isBoolean(this.config),_.isEmpty(_.get(this.config, data.buryingPointType)));
     let dt = data;
     if (
       _.isBoolean(this.config) &&
